@@ -13,5 +13,3 @@ jobs:
       - run: |
           echo "Hola Mundo from ${{ github..actor }}."
           echo "Current branch is ${{ github.branch }}."
-        
-    
