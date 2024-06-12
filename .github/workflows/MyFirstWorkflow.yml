@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Saluda a la banda 
-        run: | 
+        run: |
           echo "Hola Mundo from ${{ github..actor }}."
           echo "Current branch is ${{ github.branch }}."
         shell: bash
