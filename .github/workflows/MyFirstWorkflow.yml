@@ -1,0 +1,19 @@
+# A first worflow to play
+name:  My first Workflow
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  first_job:
+    name: My first Job
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Saluda a la banda 
+        run: | 
+          echo "Hola Mundo from ${{ github..actor }}."
+          echo "Current branch is ${{ github.branch }}."
+        shell: bash
+        
+    
