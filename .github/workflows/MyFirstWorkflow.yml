@@ -13,8 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.7
       - name: Obteniendo info del contexto
-        run: echo "$GITHUB_CONTEXT"
-      - run: |
+        run: |
           echo "Hola Mundo from ${{ github.actor }}"
           echo "Current branch is ${{ github.branch }}"
           echo "el base_ref es ${{ github.base_ref }}"
