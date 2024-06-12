@@ -1,5 +1,5 @@
 # A first worflow to play
-name:  My first Workflow
+name: My first Workflow
 on:
   push:
     branches:
