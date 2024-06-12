@@ -19,3 +19,6 @@ jobs:
           echo "el base_ref es ${{ github.base_ref }}"
           echo "Y el evento fue: ${{ github.event }}"
           echo "by Alex"
+      - name: Echo branch
+        run:  echo "${{ github.event.base_ref }}"
+      
