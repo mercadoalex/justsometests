@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
-  
-            
-  
+  workflow_dispatch: 
 jobs:
   first_job:
     name: My first Job
@@ -22,4 +19,3 @@ jobs:
           echo "el base_ref es ${{ github.base_ref }}"
           echo "Y el evento fue: ${{ github.event }}"
           echo "by Alex"
-          
