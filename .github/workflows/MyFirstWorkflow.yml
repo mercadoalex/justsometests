@@ -17,6 +17,7 @@ jobs:
         run: |
           echo "Hola Mundo from ${{ github.actor }}"
           echo "Current branch is ${{ github.branch }}"
+          echo "Current Token is $GITHUB_TOKEN"
           echo "el base_ref es ${{ github.base_ref }}"
           echo "Y el evento fue: ${{ github.event }}"
           echo "by Alex"
