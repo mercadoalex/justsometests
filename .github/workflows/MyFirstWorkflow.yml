@@ -12,14 +12,13 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v4.1.7
-      - run: tree
+      - run: tree........
       - name: Obteniendo info del contexto
         run: |
-          echo "Hola Mundo from ${{ github.actor }}"
-          echo "Current branch is ${{ github.branch }}"
-          echo "Current Token is $GITHUB_TOKEN"
-          echo "el base_ref es ${{ github.base_ref }}"
-          echo "Y el evento fue: ${{ github.event }}"
+          echo "Actor con curly braces :   ${{ github.actor }}"
+          echo "Actor con usd sign : $GITHUB_ACTOR" 
+          echo "SHA is : $GITHUB_SHA"
+          echo "EVent Name : $GITHUB_EVENT_NAME"
           echo "by Alex"
       - name: Echo branch
         run:  echo "${{ github.event.base_ref }}"
