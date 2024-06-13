@@ -12,7 +12,7 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v4.1.7
-      - run: tree........
+      - run: tree
       - name: Obteniendo info del contexto
         run: |
           echo "Actor con curly braces :   ${{ github.actor }}"
